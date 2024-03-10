@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".sampleBio">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backpic"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bioimage"
+            android:layout_width="244dp"
+            android:layout_height="209dp"
+            android:layout_marginLeft="70dp"
+            app:srcCompat="@drawable/mepic" />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:fontFamily="@font/allan"
+            android:text="Hala Qurt"
+            android:textAlignment="center"
+            android:textColor="#DF467A"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtHobby"
+            android:layout_width="316dp"
+            android:layout_height="121dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:ems="10"
+            android:hint="Enter hobbies"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#50249E"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="112dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="8dp"
+            android:text="Add" />
+
+        <TextView
+            android:id="@+id/txthobby2"
+            android:layout_width="322dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="0dp"
+            android:cursorVisible="false"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textColor="#50249E"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:text="Im Hala Qurt a second Year CS student in Birzet University Im 24 year old , I Studied medcien for four years befor changing my specialty to Cs , I loved coding and start taking extra houres in each semester to be able to graduate in 3 years , I found my self in it and loved all courses in generl , but for sure there is some course that looked more fun and enjoying to work at , for example mobile , I loved because working in somthing and beding ablr to see the result immeditly is so exiting , I dream of becoming a will known delovper all arond the world and programming apps that will really help people in what ever they need ."
+                android:textColor="#DF467A"
+                android:textSize="24sp" />
+
+        </ScrollView>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
